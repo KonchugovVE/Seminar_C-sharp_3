@@ -7,7 +7,7 @@
 
 
 
-void EnterArray(string text)
+int [] EnterArray(string text)
 {
     string[] coordinateAxes = { "x", "y", "z" };
 
@@ -18,21 +18,23 @@ void EnterArray(string text)
         System.Console.Write($"\n{text} {coordinateAxes[i]}: ");
         myArray[i] = int.Parse(Console.ReadLine());
     }
-    return new myArray[];
+    return myArray;
 }
 
-int distance(int[] pointA, int[] pointB)
+double distance(int[] pointA, int[] pointB)
 {
-    int summ = 0;
+    double summ = 0;
+
+   
 
     for (int i = 0; i < 3; i++)
     {
-        int diff = pointB[i] - pointA[i];
+        double diff = pointB[i] - pointA[i];
         summ = summ + diff * diff;
 
     }
-    int distance = Convert.ToInt32(Math.Sqrt(summ));
-    return distance;
+    double section = Math.Sqrt(summ);
+    return section;
 }
 
 int[] pointA = new int[3];
