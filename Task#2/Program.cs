@@ -34,6 +34,7 @@ double distance(int[] pointA, int[] pointB)
 
     }
     double section = Math.Sqrt(summ);
+    section = Math.Round(section, 2);
     return section;
 }
 
