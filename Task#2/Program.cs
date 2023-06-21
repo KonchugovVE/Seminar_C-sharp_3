@@ -3,11 +3,7 @@
 // A (3,6,8); B (2,1,-7), -> 15.84
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
-
-
-
-
-int [] EnterArray(string text)
+int[] EnterArray(string text)
 {
     string[] coordinateAxes = { "x", "y", "z" };
 
@@ -24,8 +20,6 @@ int [] EnterArray(string text)
 double distance(int[] pointA, int[] pointB)
 {
     double summ = 0;
-
-   
 
     for (int i = 0; i < 3; i++)
     {
